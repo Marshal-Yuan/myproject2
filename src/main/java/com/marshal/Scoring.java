@@ -2,10 +2,13 @@ package com.marshal;
 
 public class Scoring {
     public static void main(String[] args) {
-        Student jack = new Student();
-        jack.name = "Jack";
-        jack.english = 75;
-        jack.math = 80;
+        Student jack = new Student("Jack", 25, 80);
+        Student marshal = new Student("marshal", 60, 70);
+        GraduateStudent jane =
+                new GraduateStudent("Jane", 60, 70, 85);
+        jack.print();
+        marshal.print();
+        jane.print();
     }
 }
 
