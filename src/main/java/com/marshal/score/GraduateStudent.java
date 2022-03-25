@@ -1,4 +1,4 @@
-package com.marshal;
+package com.marshal.score;
 
 public class GraduateStudent extends Student {
     int thesis;

@@ -1,4 +1,4 @@
-package com.marshal;
+package com.marshal.sales;
 
 public class Customer {
     String id;

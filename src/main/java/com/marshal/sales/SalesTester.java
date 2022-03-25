@@ -1,4 +1,4 @@
-package com.marshal;
+package com.marshal.sales;
 
 public class SalesTester {
     public static void main(String[] args) {
