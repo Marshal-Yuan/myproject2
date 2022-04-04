@@ -1,7 +1,5 @@
 package com.marshal.sales;
 
-import org.w3c.dom.ls.LSOutput;
-
 public class Customer {
     String id;
     int amount;

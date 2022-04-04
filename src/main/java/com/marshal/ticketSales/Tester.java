@@ -8,7 +8,6 @@ public class Tester {
                 Station.TAIPEI_CITY,
                 Station.KAOHSIUNG
         );
-//        System.out.println(ticket.start.name);
         Scanner scanner = new Scanner(System.in);
         System.out.println("Your start station? (Taipei: 1, Taichung: 2, Kaohsiung: 3");
         int choice = Integer.parseInt(scanner.next());
@@ -38,8 +37,5 @@ public class Tester {
                 startStation = Station.KAOHSIUNG;
                 break;
         }
-        //what type of ticket?
-        //how many tickets?
-        //loop?
     }
 }

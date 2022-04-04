@@ -1,7 +1,5 @@
 package com.marshal.score;
 
-import com.marshal.score.GraduateStudent;
-import com.marshal.score.Student;
 
 public class Scoring {
     public static void main(String[] args) {
