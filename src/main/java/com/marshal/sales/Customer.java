@@ -1,5 +1,7 @@
 package com.marshal.sales;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class Customer {
     String id;
     int amount;
@@ -15,4 +17,5 @@ public class Customer {
         float money = amount-getOffMoney();
         System.out.println(id + "\t" + amount + "\t" + money);
     }
+    
 }

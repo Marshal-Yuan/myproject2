@@ -1,8 +1,8 @@
 package com.marshal.sales;
 
-public class SliverCustomer extends Customer {
+public class SilverCustomer extends Customer {
     int returnMoney;
-    public SliverCustomer(String id, int amount){
+    public SilverCustomer(String id, int amount){
         super(id, amount);
     }
     public int getReturnMoney(){
