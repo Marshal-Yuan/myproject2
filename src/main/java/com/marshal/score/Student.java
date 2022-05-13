@@ -9,14 +9,14 @@ public class Student {
     }
     public Student(String name, int english, int math) { //Constructor
         this(name);
-//        this.name = name;
+
         this.english = english;
         this.math = math;
     }
-    public Student() { //Default constructor
+    public Student() {
 
     }
-    public void print() {
+   public void print() {
         System.out.print(name + "\t" + english +
                 "\t" + math + "\t" + getAverage());
         if (getAverage() < 60) {

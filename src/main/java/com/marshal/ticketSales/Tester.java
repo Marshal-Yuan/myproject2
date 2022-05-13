@@ -28,14 +28,16 @@ public class Tester {
         Station endStation = null;
         switch (choice) {
             case 1:
-                startStation = Station.TAIPEI_CITY;
+                endStation = Station.TAIPEI_CITY;
                 break;
             case 2:
-                startStation = Station.TAICHUNG;
+                endStation = Station.TAICHUNG;
                 break;
             case 3:
-                startStation = Station.KAOHSIUNG;
+                endStation = Station.KAOHSIUNG;
                 break;
         }
+        Ticket t = new Ticket(startStation, endStation);
+        System.out.println(t.price);
     }
 }
