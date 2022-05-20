@@ -19,14 +19,15 @@ public class MainWindows {
         // Anonymous class 匿名類別
         button.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent actionEvent) {
+            public void actionPerformed(ActionEvent e) {
                 System.out.println("hahaha");
             }
         });
 
 
-                frame.setLayout(new FlowLayout());
+        frame.setLayout(new FlowLayout());
         frame.add(button);
+
         frame.setVisible(true);
         System.out.println("END?");
     }
