@@ -1,6 +1,6 @@
-package exam.exam2;
+package com.marshal.exam.exam2;
 
-import exam.One;
+import com.marshal.exam.One;
 
 public class Two extends One {
     public static void main(String[] args) {

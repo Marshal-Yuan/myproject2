@@ -1,4 +1,4 @@
-package ui;
+package com.marshal.ui;
 
 import javax.swing.*;
 import java.awt.*;

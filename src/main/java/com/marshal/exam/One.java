@@ -1,4 +1,4 @@
-package exam;
+package com.marshal.exam;
 
 public class One {
     protected int id;
