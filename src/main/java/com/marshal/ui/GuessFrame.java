@@ -21,27 +21,28 @@ public class GuessFrame extends JFrame {
         int secret = rand.nextInt(30) + 1;
 
         button.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+           @Override
+           public void actionPerformed(ActionEvent e) {
 //                System.out.println("Hello");
 //                label.setText("Hello!!");
-                int num =Integer.parseInt(number.getText());
-                System.out.println(num);
 
+               try {
+                   int num = Integer.parseInt(number.getText());
+                   System.out.println(num);
+                   if (num == secret) {
+                       label.setText("恭喜你猜對了!!數字是" + secret);
+                   } else if (num > 0 && num < secret) {
+                       label.setText("再大一點");
+                   } else if (num < 31 && num > secret) {
+                       label.setText("再小一點");
+                   } else {
+                       label.setText("超出範圍了，請重新輸入!!");
+                   }
+               } catch (Exception x) {
+                   label.setText("輸入無效，請重新輸入!!");
 
-                if(num == secret) {
-                    label.setText("恭喜你猜對了!!數字是"+ secret);
-                }
-                else if(num > 0  && num < secret){
-                        label.setText("再大一點");
-                    }
-                else if(num <31 && num > secret) {
-                    label.setText("再小一點");
-                }
-                else{
-                    label.setText("超出範圍了，請重新輸入!!");
-                }
-            }
+               }
+           }
         });
 
         setLayout(new FlowLayout());
